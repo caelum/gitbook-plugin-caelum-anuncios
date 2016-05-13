@@ -1,0 +1,17 @@
+{
+  "name": "gitbook-plugin-caelum-anuncios",
+  "version": "0.0.1",
+  "description": "Anuncios nas apostilas",
+  "main": "index.js",
+  "private": true,
+  "engines": {
+    "gitbook": ">=1.5.0"
+  },
+	"devDependencies": {
+    "bluebird": "^3.3.5",
+    "browser-sync": "^2.12.5",
+    "glob-watcher": "^3.0.0",
+    "minimist": "^1.2.0",
+    "promised-exec": "^1.0.1"
+	}
+}
