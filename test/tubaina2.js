@@ -10,15 +10,7 @@ module.exports = {
 		let themeSrc
 		try {
 			courseCode = path.basename(this.apostilaPath)
-			themeSrc = path.join(
-				'./theme'
-				,{
-					'html': 'book'
-					,'pdf': 'ebook'
-					,'epub': 'ebook'
-					,'mobi': 'ebook'
-				}[this.type]
-			)
+			themeSrc = './theme'
 		} catch(e) {
 			return Promise.reject("O tipo de apostila não existe")
 		}

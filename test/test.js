@@ -8,16 +8,16 @@ let args = require('minimist')(process.argv.slice(2), {
 	}
 })
 
-let tubainaBuilder = require('./tubainaTestBuild')
-tubainaBuilder.apostilaPath = args.apostila
-tubainaBuilder.type = args.type
+let tubaina2 = require('./tubaina2')
+tubaina2.apostilaPath = args.apostila
+tubaina2.type = args.type
 
 const bs = require('browser-sync').create()
 const promisify = require('bluebird').promisify
-tubainaBuilder.build()
+tubaina2.build()
 	.then(apostila => {
 		return promisify(bs.init)({
-			       server: [apostila.buildPath, apostila.src.themePath]
+			       server: [apostila.buildPath, apostila.src.themePath+'/assets']
 			       ,rewriteRules: [{
 	             match: /gitbook\/plugins\/gitbook-plugin-caelum-anuncios\/(.*\.css)/g,
 	             replace: "$1"
@@ -27,9 +27,9 @@ tubainaBuilder.build()
 	})
 	.then(apostila => {
 		let watch = require('glob-watcher')
-		watch([apostila.src.templatesPath, 'index.js'], ()=>{
+		watch([apostila.src.templatesPath, 'package.json', 'src/**/*.js'], ()=>{
 			bs.notify(`Rebuildando apostila`, 20000)
-			return tubainaBuilder.build().then(bs.reload)
+			return tubaina2.build().then(bs.reload)
 		})
 		watch(apostila.src.stylesPath).on('change', path => bs.reload(path))
 	})

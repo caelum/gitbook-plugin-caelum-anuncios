@@ -1,0 +1,39 @@
+.anuncio a {
+    color: inherit;
+    text-decoration: none;
+
+    display: block;
+
+    background: #f0f0f0;
+    border: 1px solid black;
+    padding: 1.5em;
+    margin: 1.5em 0;
+}
+
+.anuncio h4 {
+    margin-bottom: 1em;
+}
+
+.anuncio p {
+    text-indent: 0;
+}
+
+.anuncio p br {
+    line-height: 3em;
+}
+
+.anuncio .action {
+    color: #00e;
+    text-decoration: underline;
+}
+
+.anuncio .icone {
+    float: left;
+    margin: 0.5em 1em 1em 0;
+    width: auto;
+}
+
+.anuncio :last-child {
+    /*colapsa margin de baixo do ultimo elemento com padding interno do box*/
+    margin-bottom: 0;
+}

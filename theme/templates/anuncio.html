@@ -1,0 +1,12 @@
+<div class="anuncio">
+	<a href="http://{{link_url|safe}}" title="{{link_title}}">
+		<h4>{{ titulo|safe }}</h4>
+
+		{% if icone %}
+			<img class="icone" src="{{theme_path}}/imagens/{{icone}}_2x.png" width="{{icone_width}}" height="{{icone_height}}" aria-hidden="true">
+		{% endif %}
+
+		<p>{{ texto|safe }}</p>
+		<p><span class="action">{{ chamada|safe }}</span>.</p>
+	</a>
+</div>
