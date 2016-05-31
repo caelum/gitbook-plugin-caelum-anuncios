@@ -19,7 +19,7 @@ module.exports = {
         		.then(out => console.log(out))
         		.then(()=>{
         			console.log(`[watch][STARTED] ${this.type} build`)
-        			return exec(`cd ${this.apostilaPath}/ && tubaina2 --native --${this.type}`)
+        			return exec(`cd ${this.apostilaPath}/ && tubaina2 --native --${this.type} --plugins caelum-anuncios`)
         		})
         		.then(out => console.log(out))
         		.then(()=>{
