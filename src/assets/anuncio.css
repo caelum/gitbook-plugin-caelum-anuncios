@@ -1,5 +1,6 @@
 .anuncio {
-	color: purple;
+	color: black;
+    page-break-inside: avoid;
 }
 
 .anuncio a {

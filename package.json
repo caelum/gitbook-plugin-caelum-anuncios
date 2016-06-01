@@ -8,7 +8,6 @@
     "gitbook": ">=1.5.0"
   },
   "files": [
-    "theme",
     "src"
   ],
   "dependencies": {

@@ -3,7 +3,7 @@ try{
 	let promisify = require('bluebird').promisify
 	let path = require('path')
 	let swig = require('swig')
-	let anuncios = require('../theme/conteudo').anuncios
+	let anuncios = require('./conteudo').anuncios
 	let qtAnuncios = anuncios.length
 	let themeName = require('../package').name
 
@@ -19,7 +19,7 @@ try{
 				var sizeOf = require('image-size')
 				anuncios = Promise.all(anuncios.map(anuncio => {
 					return new Promise((resolve, reject)=>{
-						sizeOf(path.join(__dirname, `../theme/assets/imagens/${anuncio.icone}_2x.png`), (err, dimensions) =>{
+						sizeOf(path.join(__dirname, `../src/assets/imagens/${anuncio.icone}_2x.png`), (err, dimensions) =>{
 							if(err){
 								console.error(err)
 								reject(err)
@@ -51,7 +51,7 @@ try{
 				.then(anuncios => {
 					return anuncios.map(anuncio=>{
 						anuncio['theme_path'] = `../gitbook/plugins/${themeName}`
-						return swig.compileFile(path.join(__dirname, '../theme/templates/anuncio.html'), {autoescape: false})(anuncio)
+						return swig.compileFile(path.join(__dirname, '../src/templates/anuncio.html'), {autoescape: false})(anuncio)
 					})
 				})
 			},
@@ -70,13 +70,13 @@ try{
 			}
 		}
 		,book: {
-			assets: './theme/assets',
+			assets: './src/assets',
 			css: [
 				'anuncio.css'
 			]
 		}
 		,ebook: {
-			assets: './theme/assets',
+			assets: './src/assets',
 			css: [
 				'anuncio.css'
 			]

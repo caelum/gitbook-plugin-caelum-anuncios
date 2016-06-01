@@ -1,37 +1,47 @@
 "use strict"
 const path = require('path')
-const exec = require('promised-exec')
+
+const exec = require('./exec')
 
 module.exports = {
 	apostilaPath: undefined
 	,type: undefined
+	,plugins: []
 	,build(){
 		let courseCode
-		let themeSrc
+		let pluginSrc
 		try {
 			courseCode = path.basename(this.apostilaPath)
-			themeSrc = './theme'
+			pluginSrc = './src'
 		} catch(e) {
 			return Promise.reject("O tipo de apostila não existe")
 		}
 
 		return exec('npm install -g ./')
-        		.then(out => console.log(out))
         		.then(()=>{
         			console.log(`[watch][STARTED] ${this.type} build`)
-        			return exec(`cd ${this.apostilaPath}/ && tubaina2 --native --${this.type} --plugins caelum-anuncios`)
+        			return exec(`tubaina2 --native --${this.type} --plugins ${this.plugins.join(",")}`, {cwd: this.apostilaPath})
         		})
-        		.then(out => console.log(out))
         		.then(()=>{
 		        	console.log(`[watch][FINISHED] ${this.type} build`)
 		        	return {
-			        	src: {
-				        	themePath: themeSrc
-				        	,templatesPath: path.join(themeSrc, "templates/**/*.html")
-				        	,stylesPath: path.join(themeSrc, "**/*.css")
+						type: this.type
+						,buildPath: path.join(this.apostilaPath, '.build/_book')
+			        	,plugin: {
+				        	scripts: {
+								glob: path.join(pluginSrc, "*.js")
+							}
+				        	,templates: {
+								path: path.join(pluginSrc, "templates")
+								,glob: path.join(pluginSrc, "templates/**/*.html")
+							}
+				        	,assets: {
+								path: path.join(pluginSrc, "assets")
+								,glob: path.join(pluginSrc, "assets/**/*")
+							}
 			        	}
-			        	,buildPath: path.join(this.apostilaPath, '.build/_book')
 		        	}
         		})
+				.catch(e => console.error(e))
 	}
 }
