@@ -13,15 +13,10 @@ function proximoAnuncio(){
 	return anuncioAtual % qtAnuncios
 }
 
-function obtainExtension(options) {
-    var extension = options.extension || path.extname(options.output).replace(".", "");
-    return extension || "pdf";
-}
-
 module.exports = {
 	hooks: {
 		'init': function(){
-			var sizeOf = require('image-size')
+			let sizeOf = require('image-size')
 			anuncios = Promise.all(anuncios.map(anuncio => {
 				return new Promise((resolve, reject)=>{
 					sizeOf(path.join(__dirname, `../src/assets/imagens/${anuncio.icone}_2x.png`), (err, dimensions) =>{
@@ -55,11 +50,11 @@ module.exports = {
 				})
 			})
 			.then(anuncios => {
-				let extension = obtainExtension(this.options)
+				let buildType = this.options.generator
 				let assetsPath = {
-					pdf: ``
-					,html: `..`
-				}[extension]
+					ebook: ``
+					,site: `..`
+				}[buildType]
 				return anuncios.map(anuncio => {
 					anuncio['assets_path'] = path.join(assetsPath, 'gitbook', 'plugins', themeName)
 					return swig.compileFile(path.join(__dirname, '../src/templates/anuncio.html'), {autoescape: false})(anuncio)
