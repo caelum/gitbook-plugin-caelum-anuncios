@@ -1,16 +1,17 @@
 .anuncio {
 	color: black;
     page-break-inside: avoid;
+    background: #f0f0f0;
+    border: 1px solid black;
+}
+
+.anuncio * {
+    color: black;
 }
 
 .anuncio a {
-    color: inherit;
     text-decoration: none;
-
     display: block;
-
-    background: #f0f0f0;
-    border: 1px solid black;
     padding: 1.5em;
     margin: 1.5em 0;
 }
