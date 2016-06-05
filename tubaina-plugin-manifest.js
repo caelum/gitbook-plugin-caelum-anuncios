@@ -2,15 +2,13 @@ const path = require('path')
 const pluginSrc = "src"
 
 module.exports = {
-    name: 'caelum-anuncios'
-    ,scripts: {
-        glob: path.join(pluginSrc, "*.{js,json}")
-    }
+    scripts: path.join(pluginSrc, "*.{js,json}")
     ,templates: {
-        glob: path.join(pluginSrc, "templates/**/*.html")
+        pdf: path.join(pluginSrc, "templates/**/*.html")
+        ,html: path.join(pluginSrc, "templates/**/*.html")
     }
     ,staticAssets: {
-        path: path.join(pluginSrc, "assets")
-        ,glob: path.join(pluginSrc, "assets/**/*")
+        pdf: path.join(pluginSrc, "assets/**/*")
+        ,html:  path.join(pluginSrc, "assets/**/*")
     }
 }
