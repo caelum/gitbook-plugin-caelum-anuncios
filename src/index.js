@@ -33,12 +33,11 @@ module.exports = {
 			}))
 			.then(anuncios => {
 				let apostilaSpecificContent = {}
-				let anuncioOpts = this.options.anuncios || {}
-				apostilaSpecificContent['nome_apostila'] = this.options.title
-				apostilaSpecificContent['sigla_curso'] = this.options.bookCode
-				apostilaSpecificContent['nome_apostila'] = anuncioOpts.nome || "<b>NOME APOSTILA</b>"
-				apostilaSpecificContent['meta.sobre'] = anuncioOpts.about || "<b>SOBRE</b>"
-				apostilaSpecificContent['meta.url_curso'] = anuncioOpts.url || "<b>URL CURSO</b>"
+				let anuncioOpts = this.options.pluginsConfig["caelum-anuncios"] || {}
+				apostilaSpecificContent['nome'] = anuncioOpts.nome || this.options.title
+				apostilaSpecificContent['sigla'] = anuncioOpts.codigoCurso || this.options.bookCode
+				apostilaSpecificContent['sobre'] = anuncioOpts.about || "<b>SOBRE</b>"
+				apostilaSpecificContent['url'] = anuncioOpts.url || "<b>URL CURSO</b>"
 				return anuncios.map(anuncio => {
 					return Object.keys(anuncio).reduce((anuncioParseado, prop)=>{
 						anuncioParseado[prop] = swig.render(anuncio[prop], {
