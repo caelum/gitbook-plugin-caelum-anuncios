@@ -65,8 +65,9 @@ module.exports = {
 				page.sections = page.sections.map((section, index)=>{
 					let titleRegex = /<h2.*?>.*?<\/h2>/g
 					let titles = section.content.match(titleRegex)
+					console.log(titles)
 					section.content = section.content.split(titleRegex).reduce((last, current, index)=>{
-						return last + titles[index] + current + (index%3 == 1 && anuncios[proximoAnuncio()] || '')
+						return last + titles[index] + current + ((index+1)%3 == 1 && anuncios[proximoAnuncio()] || '')
 					}, "")
 					return section
 				})
