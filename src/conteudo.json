@@ -2,7 +2,7 @@
   "anuncios": [
     {
       "titulo": "Seus livros de tecnologia parecem do século passado?"
-      ,"link_url": "http://www.casadocodigo.com.br"
+      ,"link_url": "http://www.casadocodigo.com.br?utm_source=alumni&utm_medium=apostila&utm_campaign=aluno-caelum"
       ,"link_title": "Editora Casa do Código"
       ,"texto": "Conheça a <strong>Casa do Código</strong>, uma <strong>nova</strong> editora, com autores de destaque no mercado, foco em <strong>ebooks</strong> (PDF, epub, mobi), preços <strong>imbatíveis</strong> e assuntos <strong>atuais</strong>.<br>Com a curadoria da <strong>Caelum</strong> e excelentes autores, é uma abordagem <strong>diferente</strong> para livros de tecnologia no Brasil."
       ,"icone": "casa-do-codigo"
@@ -17,8 +17,8 @@
       ,"chamada": "Conheça a Alura Cursos Online"
     },
     {
-      "titulo": "Nova editora Casa do Código com livros de uma forma diferente"
-      ,"link_url": "http://www.casadocodigo.com.br"
+      "titulo": "Editora Casa do Código com livros de uma forma diferente"
+      ,"link_url": "http://www.casadocodigo.com.br?utm_source=alumni&utm_medium=apostila&utm_campaign=aluno-caelum"
       ,"link_title": "Editora Casa do Código"
       ,"texto": "Editoras tradicionais pouco ligam para ebooks e novas tecnologias. Não dominam tecnicamente o assunto para revisar os livros a fundo. Não têm anos de experiência em didáticas com cursos.<br>Conheça a <strong>Casa do Código</strong>, uma editora diferente, com curadoria da <strong>Caelum</strong> e obsessão por livros de qualidade a preços justos."
       ,"icone": "casa-do-codigo"
@@ -34,7 +34,7 @@
     },
     {
       "titulo": "Saber inglês é muito importante em TI"
-      ,"link_url": "http://www.galandra.com.br"
+      ,"link_url": "http://www.galandra.com.br?utm_source=alumni&utm_medium=apostila&utm_campaign=aluno-caelum"
       ,"link_title": "Pratique seu inglês no Galandra"
       ,"texto": "O <strong>Galandra</strong> auxilia a prática de inglês através de <i>flash cards</i> e <i>spaced repetition learning</i>. Conheça e aproveite os preços especiais."
       ,"icone": "galandra"
