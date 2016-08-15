@@ -2,7 +2,7 @@
   "anuncios": [
     {
       "titulo": "Seus livros de tecnologia parecem do século passado?"
-      ,"link_url": "www.casadocodigo.com.br?utm_source=alumni&utm_medium=apostila&utm_campaign=aluno-caelum"
+      ,"link_url": "www.casadocodigo.com.br"
       ,"link_title": "Editora Casa do Código"
       ,"texto": "Conheça a <strong>Casa do Código</strong>, uma <strong>nova</strong> editora, com autores de destaque no mercado, foco em <strong>ebooks</strong> (PDF, epub, mobi), preços <strong>imbatíveis</strong> e assuntos <strong>atuais</strong>.<br>Com a curadoria da <strong>Caelum</strong> e excelentes autores, é uma abordagem <strong>diferente</strong> para livros de tecnologia no Brasil."
       ,"icone": "casa-do-codigo"
@@ -10,7 +10,7 @@
     },
     {
       "titulo": "Agora é a melhor hora de respirar mais tecnologia!"
-      ,"link_url": "www.alura.com.br/promocao/aluno-caelum?utm_source=alumni&utm_medium=apostila&utm_campaign=aluno-caelum"
+      ,"link_url": "www.alura.com.br/promocao/aluno-caelum"
       ,"link_title": "Cursos Online Alura"
       ,"texto": "Se você está gostando dessa apostila, certamente vai aproveitar os <strong>cursos online</strong> que lançamos na plataforma <b>Alura</b>. Você estuda a qualquer momento com a <strong>qualidade</strong> Caelum. Programação, Mobile, Design, Infra, Front-End e Business! Ex-aluno da Caelum tem 15% de desconto, siga o link!"
       ,"icone": "alura"
@@ -18,7 +18,7 @@
     },
     {
       "titulo": "Editora Casa do Código com livros de uma forma diferente"
-      ,"link_url": "www.casadocodigo.com.br?utm_source=alumni&utm_medium=apostila&utm_campaign=aluno-caelum"
+      ,"link_url": "www.casadocodigo.com.br"
       ,"link_title": "Editora Casa do Código"
       ,"texto": "Editoras tradicionais pouco ligam para ebooks e novas tecnologias. Não dominam tecnicamente o assunto para revisar os livros a fundo. Não têm anos de experiência em didáticas com cursos.<br>Conheça a <strong>Casa do Código</strong>, uma editora diferente, com curadoria da <strong>Caelum</strong> e obsessão por livros de qualidade a preços justos."
       ,"icone": "casa-do-codigo"
@@ -26,7 +26,7 @@
     },
     {
       "titulo": "Já conhece os cursos online Alura?"
-      ,"link_url": "www.alura.com.br/promocao/aluno-caelum?utm_source=alumni&utm_medium=apostila&utm_campaign=aluno-caelum"
+      ,"link_url": "www.alura.com.br/promocao/aluno-caelum"
       ,"link_title": "Cursos Online Alura"
       ,"texto": "A <strong>Alura</strong> oferece centenas de <strong>cursos online</strong> em sua plataforma exclusiva de ensino que favorece o aprendizado com a <strong>qualidade</strong> reconhecida da Caelum. Você pode escolher um curso nas áreas de Programação, Front-end, Mobile, Design & UX, Infra e Business, com um plano que dá acesso a todos os cursos. Ex aluno da Caelum tem 15% de desconto neste link!"
       ,"icone": "alura"
@@ -34,7 +34,7 @@
     },
     {
       "titulo": "Saber inglês é muito importante em TI"
-      ,"link_url": "www.galandra.com.br?utm_source=alumni&utm_medium=apostila&utm_campaign=aluno-caelum"
+      ,"link_url": "www.galandra.com.br"
       ,"link_title": "Pratique seu inglês no Galandra"
       ,"texto": "O <strong>Galandra</strong> auxilia a prática de inglês através de <i>flash cards</i> e <i>spaced repetition learning</i>. Conheça e aproveite os preços especiais."
       ,"icone": "galandra"
