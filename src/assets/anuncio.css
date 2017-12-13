@@ -36,7 +36,9 @@
 .anuncio .icone {
     float: left;
     margin: 0.5em 1em 1em 0;
+    max-width: 57%;
     width: auto;
+    height: auto!important;
 }
 
 .anuncio :last-child {
