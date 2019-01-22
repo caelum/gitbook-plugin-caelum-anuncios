@@ -12,3 +12,5 @@ module.exports = {
         ,html:  path.join(pluginSrc, "assets/**/*")
     }
 }
+
+
