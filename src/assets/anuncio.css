@@ -1,8 +1,9 @@
 .anuncio {
-	color: black;
+    color: #000;
     page-break-inside: avoid;
-    background: #f0f0f0;
-    border: 1px solid black;
+    background: #eef2f5;
+    border-radius: 5px;
+    border: 2px solid #cfd9de;
 }
 
 .anuncio * {
@@ -28,7 +29,8 @@
     line-height: 3em;
 }
 
-.anuncio .action {
+.anuncio .action,
+.anuncio .action * {
     color: #00e;
     text-decoration: underline;
 }

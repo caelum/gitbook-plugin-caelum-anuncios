@@ -37,7 +37,8 @@ module.exports = {
 				apostilaSpecificContent['nome'] = anuncioOpts.nome || this.options.title
 				apostilaSpecificContent['sigla'] = anuncioOpts.codigoCurso || this.options.bookCode
 				apostilaSpecificContent['sobre'] = anuncioOpts.about || "<b>SOBRE</b>"
-				apostilaSpecificContent['url'] = anuncioOpts.url || "<b>URL CURSO</b>"
+				apostilaSpecificContent['url'] = anuncioOpts.url || this.options.pluginsConfig['caelum-tema'].caelumsite_url_curso.replace(/https?:?\/\//g, '')
+
 				return anuncios.map(anuncio => {
 					return Object.keys(anuncio).reduce((anuncioParseado, prop)=>{
 						anuncioParseado[prop] = swig.render(anuncio[prop], {
