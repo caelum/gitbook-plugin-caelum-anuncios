@@ -1,12 +1,12 @@
 {
   "anuncios": [
     {
-      "titulo": "Você pode também fazer o curso {{sigla_curso}} dessa apostila na Caelum",
-      "link_url": "{{meta.url_curso}}",
-      "link_title": "Curso {{nome_apostila}}",
-      "texto": "Querendo aprender ainda mais sobre {{meta.sobre}}? Esclarecer dúvidas dos exercícios? Ouvir explicações detalhadas com um instrutor?<br>A Caelum oferece o <strong>curso {{sigla_curso}}</strong> presencial nas cidades de São Paulo, Rio de Janeiro e Brasília, além de turmas incompany.",
+      "titulo": "Você pode também fazer o curso {{sigla}} dessa apostila na Caelum",
+      "link_url": "{{url}}",
+      "link_title": "Curso {{nome}}",
+      "texto": "Querendo aprender ainda mais sobre? Esclarecer dúvidas dos exercícios? Ouvir explicações detalhadas com um instrutor?<br>A Caelum oferece o <strong>curso {{sigla}}</strong> presencial nas cidades de São Paulo, Rio de Janeiro e Brasília, além de turmas incompany.",
       "icone": "caelum",
-      "chamada": "Consulte as vantagens do curso <em>{{nome_apostila}}</em>"
+      "chamada": "Consulte as vantagens do curso <em>{{nome}}</em>"
     },
     {
       "titulo": "Seus livros de tecnologia parecem do século passado?"
