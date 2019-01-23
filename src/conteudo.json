@@ -2,7 +2,7 @@
   "anuncios": [
     {
       "titulo": "Você pode também fazer o curso {{sigla}} dessa apostila na Caelum",
-      "link_url": "{{url}}",
+      "link_url": "{{url}}/?utm_source=apostilas-abertas&utm_medium=apostila&utm_campaign=caelum-site",
       "link_title": "Curso {{nome}}",
       "texto": "Querendo aprender ainda mais sobre? Esclarecer dúvidas dos exercícios? Ouvir explicações detalhadas com um instrutor?<br>A Caelum oferece o <strong>curso {{sigla}}</strong> presencial nas cidades de São Paulo, Rio de Janeiro e Brasília, além de turmas incompany.",
       "icone": "caelum",
