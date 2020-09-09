@@ -34,10 +34,11 @@ module.exports = {
 			.then(anuncios => {
 				let apostilaSpecificContent = {}
 				let anuncioOpts = this.options.pluginsConfig["caelum-anuncios"] || {}
+				let caelumSiteUrlCurso = this.options.pluginsConfig['caelum-tema'].caelumsite_url_curso || "<b>URL</b>";
 				apostilaSpecificContent['nome'] = anuncioOpts.nome || this.options.title
 				apostilaSpecificContent['sigla'] = anuncioOpts.codigoCurso || this.options.bookCode
 				apostilaSpecificContent['sobre'] = anuncioOpts.about || "<b>SOBRE</b>"
-				apostilaSpecificContent['url'] = anuncioOpts.url || this.options.pluginsConfig['caelum-tema'].caelumsite_url_curso.replace(/https?:?\/\//g, '')
+				apostilaSpecificContent['url'] = anuncioOpts.url || caelumSiteUrlCurso.replace(/https?:?\/\//g, '')
 
 				return anuncios.map(anuncio => {
 					return Object.keys(anuncio).reduce((anuncioParseado, prop)=>{
